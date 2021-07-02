@@ -63,17 +63,6 @@ var cookie = readCookie("style");
 var title = cookie ? cookie : getPreferredStyleSheet();
 setActiveStyleSheet(title);
 
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
 
  $("select#navigation1").click(function(){
@@ -92,16 +81,8 @@ $(document).ready(function() {
   });
  })
 
- 
+ }); 
 
-
-
-}); 
-
-
-
-	
- 
 
 	// Switcher CSS 
 	  $(document).ready(function() {
