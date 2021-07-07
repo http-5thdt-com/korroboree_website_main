@@ -149,6 +149,62 @@
 			singleItem:true
 						 
 		});
+		
+		
+		$("#slider-1").owlCarousel({
+							 
+			navigation: false, 
+			slideSpeed : 300,
+			autoPlay : 5000,
+			singleItem:true
+						 
+		});
+		
+		$("#slider-2").owlCarousel({
+							 
+			navigation: false, 
+			slideSpeed : 300,
+			autoPlay : 5000,
+			singleItem:true
+						 
+		});
+		
+		$("#slider-3").owlCarousel({
+							 
+			navigation: false, 
+			slideSpeed : 300,
+			autoPlay : 5000,
+			singleItem:true
+						 
+		});
+		
+		$("#slider-4").owlCarousel({
+							 
+			navigation: false, 
+			slideSpeed : 300,
+			autoPlay : 5000,
+			singleItem:true
+						 
+		});		
+		
+		
+		$("#slider-5").owlCarousel({
+							 
+			navigation: false, 
+			slideSpeed : 300,
+			autoPlay : 5000,
+			singleItem:true
+						 
+		});
+		
+		$("#slider-6").owlCarousel({
+							 
+			navigation: false, 
+			slideSpeed : 300,
+			autoPlay : 5000,
+			singleItem:true
+						 
+		});
 	 
 
 

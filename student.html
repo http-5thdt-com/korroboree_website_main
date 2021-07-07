@@ -66,9 +66,10 @@
                         <a href="#">About</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Why</a></li>
-                           <li><a href="#" class="">How</a></li>
-                           <li><a href="#" class="">What</a></li>
+                           <li><a href="about.html#why" class="">Why We Exist</a></li>
+                           <li><a href="about.html#how" class="">How We Began</a></li>
+                           <li><a href="about.html#what" class="">What We Offer</a></li>
+						   <li><a href="about.html#who" class="">Who We Are</a></li>	
                         </ul>
                      </li>
                   </ul>
@@ -81,11 +82,14 @@
                         <a href="parent.html">Introduction</a>
                      </li>
                      <li class="has-children">
-                        <a href="#">Learning - Self Paced</a>
+                        <a href="#">Parent</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Conversations</a></li>
-                           <li><a href="#" class="">Webinars</a></li>
+                           <li><a href="parent.html#why" class="">Why We Exist</a></li>
+                           <li><a href="parent.html#how" class="">How We Will Make A Difference</a></li>
+                           <li><a href="parent.html#what" class="">What We Offer</a></li>
+						   <li><a href="parent.html#learn" class="">Digital Learning</a></li>
+						   <li><a href="parent.html#resource" class="">Resources</a></li>	
                         </ul>
                      </li>
                      <li class="has-children">
@@ -115,11 +119,14 @@
                         <a href="teacher.html">Introduction</a>
                      </li>
                      <li class="has-children">
-                        <a href="#">Learning - Self Paced</a>
+                        <a href="#">Teacher</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Conversations</a></li>
-                           <li><a href="#" class="">Webinars</a></li>
+                           <li><a href="teacher.html#why" class="">Why We Exist</a></li>
+                           <li><a href="teacher.html#how" class="">How We Will Make A Difference</a></li>
+                           <li><a href="teacher.html#what" class="">What We Offer</a></li>
+						   <li><a href="teacher.html#learn" class="">Digital Learning</a></li>
+						   <li><a href="teacher.html#resource" class="">Resources</a></li>
                         </ul>
                      </li>
                      <li class="has-children">
@@ -149,11 +156,14 @@
                         <a href="student.html">Introduction</a>
                      </li>
                      <li class="has-children">
-                        <a href="#">Learning - Self Paced</a>
+                        <a href="#">Student</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Conversations</a></li>
-                           <li><a href="#" class="">Webinars</a></li>
+                           <li><a href="#why" class="">Why We Exist</a></li>
+                           <li><a href="#how" class="">How We Will Make A Difference</a></li>
+                           <li><a href="#what" class="">What We Offer</a></li>
+						   <li><a href="#learn" class="">Digital Learning</a></li>
+						   <li><a href="#resource" class="">Resources</a></li>
                         </ul>
                      </li>
                      <li class="has-children">
@@ -219,11 +229,11 @@
 				 <div class="post-sidebar">
 					<h6>Teacher</h6>
 					<ul class="link-recents shortcodes-carousel">
-					   <li class="tab"><a href="#why">Why We Exist</a></li>
-					   <li class="tab"><a href="#how">How We Will <br /> Make a Difference</a></li>
-					   <li class="tab"><a href="#what">What</a></li>
-					   <li class="tab"><a href="#learn">Digital Learning</a></li>
-					   <li class="tab"><a href="#resource">Resources</a></li>	
+					   <li class="tab tablinks" onclick="show(event, 'why')" id="defaultOpen"><a href="#why">Why We Exist</a></li>
+					   <li class="tab tablinks" onclick="show(event, 'how')"><a href="#how">How We Will <br /> Make a Difference</a></li>
+					   <li class="tab tablinks" onclick="show(event, 'what')"><a href="#what">What</a></li>
+					   <li class="tab tablinks" onclick="show(event, 'learn')"><a href="#learn">Digital Learning</a></li>
+					   <li class="tab tablinks" onclick="show(event, 'resource')"><a href="#resource">Resources</a></li>	
 					</ul>
 				 </div>
 			  </div> 
@@ -565,6 +575,44 @@
       </script>
       <script type="text/javascript" src="assets/js/styleswitcher.js"></script>
       <script type="text/javascript" src="assets/js/custom-index.js"></script>
+	  <script type="text/javascript">
+		  var tab;
+		  var tabContent;
+			window.onload=function() {
+				tabContent=document.getElementsByClassName('tabContent');
+				tab=document.getElementsByClassName('tab');
+				hideTabsContent(1);
+			}
+
+			document.getElementById('tabs').onclick= function (event) {
+				var target=event.target;
+				if (target.className=='tab') {
+				   for (var i=0; i<tab.length; i++) {
+					   if (target == tab[i]) {
+						   showTabsContent(i);
+						   break;
+					   }
+				   }
+				}
+			}
+
+			function hideTabsContent(a) {
+				for (var i=a; i<tabContent.length; i++) {
+					tabContent[i].classList.remove('show');
+					tabContent[i].classList.add("hide");
+					tab[i].classList.remove('whiteborder');
+				}
+			}
+
+			function showTabsContent(b){
+				if (tabContent[b].classList.contains('hide')) {
+					hideTabsContent(0);
+					tab[b].classList.add('whiteborder');
+					tabContent[b].classList.remove('hide');
+					tabContent[b].classList.add('show');
+				}
+			}
+	  </script> 
       <script type="text/javascript">
          document.getElementById("year").innerHTML = new Date().getFullYear();
       </script> 

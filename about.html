@@ -66,10 +66,10 @@
                         <a href="#">About</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Why We Exist</a></li>
-                           <li><a href="#" class="">How We Began</a></li>
-                           <li><a href="#" class="">What We Offer</a></li>
-						   <li><a href="#" class="">Who We Are</a></li>
+                           <li><a href="#why" class="">Why We Exist</a></li>
+                           <li><a href="#how" class="">How We Began</a></li>
+                           <li><a href="#what" class="">What We Offer</a></li>
+						   <li><a href="#who" class="">Who We Are</a></li>	
                         </ul>
                      </li>
                   </ul>
@@ -82,11 +82,14 @@
                         <a href="parent.html">Introduction</a>
                      </li>
                      <li class="has-children">
-                        <a href="#">Learning - Self Paced</a>
+                        <a href="#">Parent</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Conversations</a></li>
-                           <li><a href="#" class="">Webinars</a></li>
+                           <li><a href="parent.html#why" class="">Why We Exist</a></li>
+                           <li><a href="parent.html#how" class="">How We Will Make A Difference</a></li>
+                           <li><a href="parent.html#what" class="">What We Offer</a></li>
+						   <li><a href="parent.html#learn" class="">Digital Learning</a></li>
+						   <li><a href="parent.html#resource" class="">Resources</a></li>	
                         </ul>
                      </li>
                      <li class="has-children">
@@ -116,11 +119,14 @@
                         <a href="teacher.html">Introduction</a>
                      </li>
                      <li class="has-children">
-                        <a href="#">Learning - Self Paced</a>
+                        <a href="#">Teacher</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Conversations</a></li>
-                           <li><a href="#" class="">Webinars</a></li>
+                           <li><a href="teacher.html#why" class="">Why We Exist</a></li>
+                           <li><a href="teacher.html#how" class="">How We Will Make A Difference</a></li>
+                           <li><a href="teacher.html#what" class="">What We Offer</a></li>
+						   <li><a href="teacher.html#learn" class="">Digital Learning</a></li>
+						   <li><a href="teacher.html#resource" class="">Resources</a></li>
                         </ul>
                      </li>
                      <li class="has-children">
@@ -150,11 +156,14 @@
                         <a href="student.html">Introduction</a>
                      </li>
                      <li class="has-children">
-                        <a href="#">Learning - Self Paced</a>
+                        <a href="#">Student</a>
                         <ul class="is-hidden">
                            <li class="go-back"><a href="#0">Pages</a></li>
-                           <li><a href="#" class="">Conversations</a></li>
-                           <li><a href="#" class="">Webinars</a></li>
+                           <li><a href="student.html#why" class="">Why We Exist</a></li>
+                           <li><a href="student.html#how" class="">How We Will Make A Difference</a></li>
+                           <li><a href="student.html#what" class="">What We Offer</a></li>
+						   <li><a href="student.html#learn" class="">Digital Learning</a></li>
+						   <li><a href="student.html#resource" class="">Resources</a></li>
                         </ul>
                      </li>
                      <li class="has-children">
@@ -220,16 +229,16 @@
                      <div class="post-sidebar">
                         <h6>About</h6>
                         <ul class="link-recents shortcodes-carousel">
-                           <li class="tab"><a href="#why">Why We Exist</a></li>
-                           <li class="tab"><a href="#how">How We Began</a></li>
-                           <li class="tab"><a href="#what">What We Offer</a></li>
-                           <li class="tab"><a href="#who">Who We Are</a></li>
+                           <li class="tab tablinks" onclick="show(event, 'why')" id="defaultOpen"><a href="#why">Why We Exist</a></li>
+                           <li class="tab tablinks" onclick="show(event, 'how')"><a href="#how">How We Began</a></li>
+                           <li class="tab tablinks" onclick="show(event, 'what')"><a href="#what">What We Offer</a></li>
+                           <li class="tab tablinks" onclick="show(event, 'who')"><a href="#who">Who We Are</a></li>
                         </ul>
                      </div>
                   </div> 
                   <div class="twelve columns">
 					  
-					 <section id="why"> 
+					 <section id="why" class="tabcontent"> 
 					  
 						 <div class="blog-big-wrapper grey-section" data-scroll-reveal="enter bottom move 200px over 1s after 0.3s">
 							<h5>
@@ -249,7 +258,7 @@
 						 
 					 </section>
 					  
-					 <section id="how"> 
+					 <section id="how" class="tabcontent"> 
 					 
 						 <div class="blog-big-wrapper grey-section" data-scroll-reveal="enter bottom move 200px over 1s after 0.3s">
 							<h5>
@@ -272,7 +281,7 @@
 						 
 					 </section>
 					 
-					 <section id="what">
+					 <section id="what" class="tabcontent">
 						 
 						 <div class="blog-big-wrapper grey-section" data-scroll-reveal="enter bottom move 200px over 1s after 0.3s">
 							<h5>
@@ -308,7 +317,7 @@
 						 
 					 </section>
 					 
-					 <section id="who">
+					 <section id="who" class="tabcontent">
 					 
 						 <div class="blog-big-wrapper grey-section" data-scroll-reveal="enter bottom move 200px over 1s after 0.3s">
 							<h5>
