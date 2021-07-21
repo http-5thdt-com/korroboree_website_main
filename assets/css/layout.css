@@ -4342,7 +4342,7 @@ xkeyframes
 .blog-big-wrapper{ 
 	position:relative;
 	width:100%;
-	padding:30px;
+	padding:42px;
 	margin-bottom:20px;
 }
 .blog-big-wrapper img{ 
@@ -7344,9 +7344,9 @@ Main components
 	padding-top:120px;
 	padding-bottom:120px;
 }
-.parallax-section-padding-top-bottom-home{
-	padding-top:230px;
-	padding-bottom:120px;
+.parallax-section-padding-top-bottom-home {
+  padding-top: 411px;
+  padding-bottom: 130px;
 } 
 .parallax-section-padding-top-bottom-folio{
 	padding-top:300px;
