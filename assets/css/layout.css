@@ -859,7 +859,7 @@ support for no js
 	left:0;
 	top:60%;
 	margin-top:-70px;
-	color:#212121;
+	color: #EFEFEF;
 	text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 	font-weight:700;
@@ -986,7 +986,7 @@ a.arrow-down{
 	border:2px solid #212121;
 	border-radius:50%;
 	font-size:22px;
-	color:#212121;
+	color:#EFEFEF;
 	line-height:48px;
 	text-align:center;
 	z-index:100;
