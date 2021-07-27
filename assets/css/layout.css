@@ -983,7 +983,7 @@ a.arrow-down{
 	margin-left:-25px;
 	font-family: 'FontAwesome';
 	bottom:70px;
-	border:2px solid #212121;
+	border:2px solid white;
 	border-radius:50%;
 	font-size:22px;
 	color:#EFEFEF;
@@ -1017,7 +1017,7 @@ a.arrow-down:hover{
 	background-color:#f9f9f9;
 }
 .section-padding-top-bottom{
-	padding-top:70px;
+	padding-top:100px;
 	padding-bottom:70px;
 }
 .section-padding-top{
@@ -1925,12 +1925,12 @@ video#video_background {
 	font-weight:400;
 	text-transform: uppercase;
 	display:inline-block;
-	float:left;
-	margin-right:20px;
+	/* float:left; */
+	/* margin-right:20px; */
 }
 .button-shortcodes.big-button {
 	font-weight:700;
-	letter-spacing:3px;
+	letter-spacing:2px;
 	text-align:center;
 }
 .button-shortcodes.big-button em{
@@ -1968,7 +1968,7 @@ video#video_background {
 	font-size:18px;
 }
 .button-shortcodes.text-size-8 {
-	font-size:19px;
+	font-size:14px;
 }
 .button-shortcodes.text-size-9 {
 	font-size:20px;
@@ -1996,7 +1996,8 @@ video#video_background {
 	padding:16px 41px;
 }
 .button-shortcodes.text-padding-8 {
-	padding:17px 42px;
+  padding: 9px 19px;
+  margin-top: 17px;
 }
 .button-shortcodes.text-padding-9 {
 	padding:18px 43px;
@@ -2308,12 +2309,12 @@ video#video_background {
 
 .fa {
 	  display: inline-block;
-	  font: normal normal normal 20px/1 FontAwesome;
+	  font: normal normal normal 20px/1 FontAwesome !important;
 	  font-size: inherit;
 	  text-rendering: auto;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
-	  padding-right:10px;
+	  padding:8px;
 }
 .muted{
 	padding-left:10px;
@@ -4330,6 +4331,9 @@ xkeyframes
 	display:block;
 	height:auto;
 }
+.slider_top{
+  margin: -6.6781px 0px 0px !important;
+}
 .lat-pro-img:hover{ 
 	opacity:0.3;
 }
@@ -4342,14 +4346,21 @@ xkeyframes
 .blog-big-wrapper{ 
 	position:relative;
 	width:100%;
-	padding:42px;
+	padding:10px;
 	margin-bottom:20px;
 }
 .blog-big-wrapper img{ 
 	width:100%;
 	height:auto;
 	display:block;
-	padding-bottom:30px;
+	padding-bottom:10px;
+}
+.wrapper2 img {
+  width: 55% !important;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  padding-bottom: 30px;
 }
 .blog-big-wrapper iframe{ 
 	padding-bottom:30px;
@@ -4357,6 +4368,13 @@ xkeyframes
 .blog-big-wrapper h5{ 
 	text-align:left;
 	padding-bottom:20px;
+}
+.blog-big-wrapper .heading {
+  text-align: center !important;
+  padding: 20px;
+}
+.rick{
+font-size: 22px;
 }
 .blog-big-wrapper a h5{ 
 	color: #414141;
@@ -7569,6 +7587,28 @@ Main components
 }
 
 .parallax-about-me {
+	background: url('../pictures/website/homepage/teachers/homepage\ teacher.jpg') repeat fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	width:100%;  
+}
+.parallax-about-me2 {
+	background: url('../pictures/website/homepage/students/homepage\ -\ student.jpg') repeat fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	width:100%;  
+}
+.parallax-about-me1 {
 	background: url('../pictures/website/homepage/parents/home_page\ -parent.jpg') repeat fixed;
 	background-size: cover;
 	position: absolute;

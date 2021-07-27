@@ -54,7 +54,7 @@ a.arrow-down:hover{
 }
 
 .own_btn .cd-read-more {
-  border:2px solid #00AFEF;
+  border:2px solid #00AFEF !important;
 }
 .own_btn .cd-read-more:hover {
   background-color: #00AFEF;
