@@ -7535,7 +7535,7 @@ iframe.uk-cover {
 }
 
 .uk-background-primary {
-  background-color: #3000ef;
+  /* background-color: #3000ef; */
 }
 
 .uk-background-secondary {
@@ -9859,7 +9859,7 @@ footer .uk-subnav > * {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-heading-2xlarge,
 .uk-overlay-primary .uk-heading-2xlarge,
 .uk-offcanvas-bar .uk-heading-2xlarge {
-  color: #fff;
+  color: black;
 }
 
 .uk-light blockquote, .uk-section-primary:not(.uk-preserve-color) blockquote, .uk-section-secondary:not(.uk-preserve-color) blockquote, .uk-card-primary.uk-card-body blockquote, .uk-card-primary > :not([class*='uk-card-media']) blockquote, .uk-card-secondary.uk-card-body blockquote, .uk-card-secondary > :not([class*='uk-card-media']) blockquote, .uk-overlay-primary blockquote, .uk-offcanvas-bar blockquote {
