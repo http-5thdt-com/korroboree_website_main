@@ -1976,6 +1976,7 @@ video#video_background {
 
 .button-shortcodes.text-padding-1 {
 	padding:10px 35px;
+  margin-bottom: 30px;
 }
 .button-shortcodes.text-padding-2 {
 	padding:11px 36px;
@@ -1999,6 +2000,7 @@ video#video_background {
   padding: 9px 19px;
   margin-top: 17px;
 }
+
 .button-shortcodes.text-padding-9 {
 	padding:18px 43px;
 }
@@ -2302,6 +2304,10 @@ video#video_background {
 }
 #sync-sortcodes-8 .synced .item {
 }
+.required-mark{
+  color: red;
+}
+
 
 
 /* #Icons
@@ -4237,6 +4243,7 @@ xkeyframes
 
 .post-sidebar h6{ 
 	text-align:left;
+  font-weight: 700;
 	padding-bottom:20px;
 }
 .link-tag{ 
@@ -4362,16 +4369,28 @@ xkeyframes
   display: block;
   padding-bottom: 30px;
 }
+.leaderhead img{
+  width: 80% !important;
+  margin: 0 auto;
+  height: auto;
+  display:flex !important;
+  padding-bottom: 30px;
+}
 .blog-big-wrapper iframe{ 
 	padding-bottom:30px;
 }
 .blog-big-wrapper h5{ 
 	text-align:left;
+  font-weight: 700;
 	padding-bottom:20px;
 }
 .blog-big-wrapper .heading {
   text-align: center !important;
   padding: 20px;
+}
+.blog-big-wrapper .lina {
+  text-align: center !important;
+  padding: 2px;
 }
 .rick{
 font-size: 22px;

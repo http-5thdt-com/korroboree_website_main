@@ -84,9 +84,14 @@ input[type="button"]:hover {
 .story_head {
 	color: white;
 }
+.floating-wpp-button{
+    width: 50px !important;
+    height: 50px !important;
+}
 
 .bold_txt {
-	font-weight: bold;
+	font-weight:800;
+    color: black;
 }
 
 .vision_txt p {
@@ -716,7 +721,7 @@ label {
     cursor: pointer;
 }
 p {
-    color: #c9c1c1;
+    color: gray;
     font-size: 13px;
     line-height: 22px;
 }

@@ -1983,7 +1983,8 @@ select.uk-form-width-xsmall {
 
 .uk-form-large {
   font-weight: 700;
-  border-width: 3px;
+  border: none;
+  border-bottom: groove;
 }
 
 /* ========================================================================
