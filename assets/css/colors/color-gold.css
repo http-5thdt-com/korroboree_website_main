@@ -83,6 +83,7 @@ a.arrow-down:hover{
 }
 .tooltip-inner-shop {
 	background:#ffcc2a;
+	color: black;
 }
 .shop-box .shop-price span{
 	color:#ffcc2a;
