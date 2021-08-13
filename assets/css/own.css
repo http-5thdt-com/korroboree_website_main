@@ -844,18 +844,39 @@ p {
     margin-left: 45%;
 }
 
-.pading_top_contct{
-    padding-top: 100px;
+.pading_top_contct {
+    padding-top: 155px;
+    padding-bottom: 14px;
 }
-
 .bord{
     color: #8089a2;
 }
 img, svg {
     vertical-align: middle;
 }
+.own_six_columns{
+    width: 380px;
+}
+
+.bs-example{
+    margin: 20px;
+}
+body.modal-open {
+height: 100vh;
+overflow-y: hidden;
+}
+.modal-body {
+    padding: 5px !important;
+}
 
 
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 630px !important;
+    margin: 103px auto;
+}
+}
 @media only screen and (min-device-width : 2561px) and (max-device-width : 3840px) {
     .fnt_incre{
         font-size: 130px;

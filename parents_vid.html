@@ -71,12 +71,16 @@
 	});
 </script>
 <style>
+	body.modal-open {
+  height: 90vh;
+  overflow-y: hidden;
+}
     .bs-example{
     	margin: 20px;
     }
-	body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
+	.modal-dialog {
+    max-width: 661px;
+    margin: 85px auto;
 }
 </style>
 	
@@ -127,7 +131,7 @@
                </li>
                <li>
                   <i><img src="assets/images/icons/cart_icon.png" height="auto" width="17px" /></i>
-                  <a href="cart.html" class="">cart</a>
+                  <a href="cart.html" class="">Cart</a>
                </li>
 
                <li>
@@ -164,72 +168,120 @@
 		 
 
   
-  <!-- Modal -->
-  <div class="modal fade " id="exampleModal" tabindex="-1" style="z-index: 9999;" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <!-- Modal HTML -->
+   <div id="myModal" class="modal fade">
 	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel"></h5>
-		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		  </button>
-		</div>
-		<div class="modal-body">
-			<video src="https://korroboree.com/website_files/resources/videos/%23GettingCandid%20with%20Swaayambhu%20-%20Ms.%20Lina%20Ashar%20on%2C%20Unleash%20the%20Power%20of%20your%20Subconscious%20Mind..mp4" controls  width="100%" height="auto"></video> 
-		</div>
-	
-	  </div>
-	</div>
-  </div>
-
-
-
-
-	<!-- Modal -->
-	
-	<div class="modal-dialog modal-dialog-centered">
-	<div class="modal fade" id="exampleModal2" tabindex="-1" style="z-index: 9999;" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		  <div class="modal-content">
+		<div class="modal-content">
 			<div class="modal-header">
-			  <h5 class="modal-title" id="exampleModalLabel"></h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
 			</div>
 			<div class="modal-body">
-				<video src="https://korroboree.com/website_files/resources/videos/%23GettingCandid%20with%20Swaayambhu%20-%20Ms.%20Lina%20Ashar%20on%2C%20Unleash%20the%20Power%20of%20your%20Subconscious%20Mind..mp4" controls  width="100%" height="auto"></video> 
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/In%20conversation%20with%20SuperMOM%20Star%20Lina%20Asher.mp4" allowfullscreen></video>
+			  </div>
 			</div>
-		
-		  </div>
 		</div>
-	  </div>
-	
 	</div>
-	
-	<!-- TOP SECTION
-    ================================================== -->
-	
-	<!-- <section class="section grey-section section-padding-top-bottom">
-		
-		<div class="container">
-			<div class="sixteen columns">
-				<iframe src="http://player.vimeo.com/video/96696089?title=0&amp;byline=0&amp;portrait=0&amp;color=cfa144" width="940" height="450" ></iframe>
+</div>
+<!-- Modal HTML -->
+<div id="myModal1" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
 			</div>
-			
+			<div class="modal-body">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/When%20Education%20is%20Fun%20for%20Kids%2C%20Their%20Ultimate%20Potential%20is%20Realized%20_%20Lina%20Ashar%20_%20Feministaa.mp4" allowfullscreen></video>
+			  </div>
+			</div>
 		</div>
-			
-	</section>
-	 -->
-	<!-- SECTION
-    ================================================== -->
+	</div>
+</div>
+<!-- Modal HTML -->
+<div id="myModal2" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player1" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/Kangaroo%20Kids%27%20Lina%20Ashar%20-%20Nobody%20knows%20when%20your%20child%20will%20go%20back%20to%20classrooms.mp4" allowfullscreen></video>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal HTML -->
+<div id="myModal3" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/Exclusive%20conversation%20with%20Lina%20Ashar%2C%20founder%20Billabong%20High%20International%20School%20%26%20Kangaroo%20Kids.mp4" allowfullscreen></video>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal HTML -->
+<div id="myModal4" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/In%20conversation%20with%20SuperMOM%20Star%20Lina%20Asher.mp4" allowfullscreen></video>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal HTML -->
+<div id="myModal5" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/When%20Education%20is%20Fun%20for%20Kids%2C%20Their%20Ultimate%20Potential%20is%20Realized%20_%20Lina%20Ashar%20_%20Feministaa.mp4" allowfullscreen></video>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal HTML -->
+<div id="myModal6" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1></h1>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<video id="video_player" controls class="embed-responsive-item" width="560" height="315" src="https://korroboree.com/website_files/resources/videos/Exclusive%20conversation%20with%20Lina%20Ashar%2C%20founder%20Billabong%20High%20International%20School%20%26%20Kangaroo%20Kids.mp4" allowfullscreen></video>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
 
-	 
-
-
-	  	
-		
-
+	
 
 	<!-- SECTION
     ================================================== -->
@@ -246,16 +298,8 @@
 				<div class="sixteen columns">
 					<ul id="owl-carousel-1">
 					
-						
-							<!-- <li>	
-							<div class="portfolio-box-2 grey-section">
-									<center><iframe src="https://korroboree.com/website_files/resources/videos/Educational%20Endeavours%20_%20Global%20Resilient%20Citizen%20Series%20_%20Episode1%20_%20Ashraf%20Noorani%20and%20Lina%20Ashar.mp4"   width="250" height="200"></iframe></center>
-									<h6>Educational Endeavours  </h6>
-									<p>| Global Resilient Citizen Series | Episode1 | Ashraf Noorani and Lina Ashar</p>
-							</div>
-						</li> -->
 						<li>
-							<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#exampleModal">
+							<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal">
 									<center>
 										<!-- <video src="https://korroboree.com/website_files/resources/videos/In%20conversation%20with%20SuperMOM%20Star%20Lina%20Asher.mp4" controls  width="250" height="200"></video> -->
 										<img src="assets/images/thum22.png" alt="">
@@ -273,7 +317,7 @@
 						</li>
 						
 						 <li>
-							<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#exampleModal2">
+							<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal1">
 									<center>
 										<!-- <video src="https://korroboree.com/website_files/resources/videos/When%20Education%20is%20Fun%20for%20Kids%2C%20Their%20Ultimate%20Potential%20is%20Realized%20_%20Lina%20Ashar%20_%20Feministaa.mp4"  controls width="250" height="200"></video> -->
 										<img src="assets/images/thum.png" alt="">
@@ -290,7 +334,7 @@
 						</li>
 						
 						<li>
-							<div class="portfolio-box-2 grey-section grad">
+							<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal2">
 									<center>
 										<!-- <video src="https://korroboree.com/website_files/resources/videos/Kangaroo%20Kids%27%20Lina%20Ashar%20-%20Nobody%20knows%20when%20your%20child%20will%20go%20back%20to%20classrooms.mp4" controls  width="250" height="200"></video> -->
 										<img src="assets/images/thum22.png" alt="">
@@ -308,7 +352,7 @@
 						</li>
 						
 						<li>
-							<div class="portfolio-box-2 grey-section grad">
+							<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal3">
 									
 									<center>
 									<!-- 	<video src="https://korroboree.com/website_files/resources/videos/Exclusive%20conversation%20with%20Lina%20Ashar%2C%20founder%20Billabong%20High%20International%20School%20%26%20Kangaroo%20Kids.mp4" controls  width="250" height="200"></video> -->
@@ -346,16 +390,8 @@
 			<div class="sixteen columns">
 				<ul id="owl-carousel-2">
 				
-					
-						<!-- <li>	
-						<div class="portfolio-box-2 grey-section">
-								<center><iframe src="https://korroboree.com/website_files/resources/videos/Educational%20Endeavours%20_%20Global%20Resilient%20Citizen%20Series%20_%20Episode1%20_%20Ashraf%20Noorani%20and%20Lina%20Ashar.mp4"   width="250" height="200"></iframe></center>
-								<h6>Educational Endeavours  </h6>
-								<p>| Global Resilient Citizen Series | Episode1 | Ashraf Noorani and Lina Ashar</p>
-						</div>
-					</li> -->
 					<li>
-						<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#exampleModal">
+						<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal4">
 								<center>
 									<!-- <video src="https://korroboree.com/website_files/resources/videos/In%20conversation%20with%20SuperMOM%20Star%20Lina%20Asher.mp4" controls  width="250" height="200"></video> -->
 									<img src="assets/images/thum22.png" alt="">
@@ -373,7 +409,7 @@
 					</li>
 					
 					 <li>
-						<div class="portfolio-box-2 grey-section grad">
+						<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal5">
 								<center>
 									<!-- <video src="https://korroboree.com/website_files/resources/videos/When%20Education%20is%20Fun%20for%20Kids%2C%20Their%20Ultimate%20Potential%20is%20Realized%20_%20Lina%20Ashar%20_%20Feministaa.mp4"  controls width="250" height="200"></video> -->
 									<img src="assets/images/thum.png" alt="">
@@ -390,7 +426,7 @@
 					</li>
 					
 					<li>
-						<div class="portfolio-box-2 grey-section grad">
+						<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal6">
 								<center>
 									<!-- <video src="https://korroboree.com/website_files/resources/videos/Kangaroo%20Kids%27%20Lina%20Ashar%20-%20Nobody%20knows%20when%20your%20child%20will%20go%20back%20to%20classrooms.mp4" controls  width="250" height="200"></video> -->
 									<img src="assets/images/thum22.png" alt="">
@@ -408,7 +444,7 @@
 					</li>
 					
 					<li>
-						<div class="portfolio-box-2 grey-section grad">
+						<div class="portfolio-box-2 grey-section grad" data-toggle="modal" data-target="#myModal6">
 								
 								<center>
 								<!-- 	<video src="https://korroboree.com/website_files/resources/videos/Exclusive%20conversation%20with%20Lina%20Ashar%2C%20founder%20Billabong%20High%20International%20School%20%26%20Kangaroo%20Kids.mp4" controls  width="250" height="200"></video> -->
@@ -455,9 +491,9 @@
 		  <li class="page-item disabled">
 			<a class="page-link" href="#" tabindex="-1">Previous</a>
 		  </li>
-		  <li class="page-item"><a class="page-link" href="parents_vid.html">1</a></li>
-		  <li class="page-item"><a class="page-link" href="parents_vid2.html">2</a></li>
-		  <li class="page-item"><a class="page-link" href="parents_vid3.html">3</a></li>
+		  <li class="page-item"><a class="page-link" href="parents_vid.html" style="color: blue;">1</a></li>
+		  <li class="page-item"><a class="page-link" href="parents_vid2.html" style="color: black;">2</a></li>
+		  <li class="page-item"><a class="page-link" href="parents_vid3.html" style="color: black;">3</a></li>
 		  <li class="page-item">
 			<a class="page-link" href="parents_vid2.html">Next</a>
 		  </li>
@@ -499,7 +535,7 @@
 			<p>
 			   <!-- <a href="#">About Us</a> <br/> <br/> -->
 			   <a href="contact.html">Contact Us</a> <br/> <br/>
-			   <a href="terms_conditions.html">Terms &amp; Conditions</a> <br/> <br/>
+			   <a href="terms_conditions.html">Terms of Service </a> <br/> <br/>
 			   <a href="privacy_policy.html">Privacy Policy</a>
 			</p>
 		 </div>
@@ -521,7 +557,7 @@
 				  </span>
 			  </div>
 			  <br /><br /> 
-			  <div class="own_btn"  style="margin-top: 15px;">
+			  <div class="own_btn"  style="margin-top: 15px;margin-bottom: 20px;">
 				  <a href="#" class="cd-read-more">Submit</a>
 			  </div> 
 		   </div>
@@ -530,7 +566,7 @@
 		<section class="section footer-bottom">
 			<div class="container">
 			   <div class="sixteen columns">
-				  <p>© ALL RIGHTS RESERVED. MADE BY 5TH Dimension Technologies 2021<span id="year"></span></p>
+				<a href="http://5thdt.com/" target="_blank"><p>© ALL RIGHTS RESERVED. MADE BY 5TH Dimension Technologies <span id="year"></span></p></a>
 			   </div>
 			</div>
 		 </section>
@@ -562,8 +598,6 @@
 <script type="text/javascript" src="assets/js/jquery.mobile.custom.min.js"></script>
 <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>		
 <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
-
-   
 <script type="text/javascript">
 (function($) { "use strict";
 	$(document).ready(function() {
@@ -633,7 +667,33 @@
 <script type="text/javascript" src="assets/js/styleswitcher.js"></script>
 <script type="text/javascript" src="assets/js/custom-carousels.js"></script>  	  
 
+<script>
+	$(document).ready(function(){
+		var url = $("#video_player").attr('src');
+		
+		$("#myModal").on('hide.bs.modal', function(){
+			$("#video_player").attr('src', '');
+		});
+		
+		$("#myModal").on('show.bs.modal', function(){
+			$("#video_player").attr('src', url);
+		});
 
+
+	});
+	$(document).ready(function(){
+		var urls = $("#video_player1").attr('src');
+	
+		$("#myModal1").on('hide.bs.modal', function(){
+			$("#video_player1").attr('src', '');
+		});
+		
+		$("#myModal1").on('show.bs.modal', function(){
+			$("#video_player1").attr('src', urls);
+		});
+
+	});
+	</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
