@@ -65,12 +65,10 @@
     .mrg_top_acnt{
         padding-top: 90px;
     }
-    .container .column, .container .columns{
-        float: none !important;
-    }
+    
     .smk_accordion .accordion_in .acc_head .acc_icon_expand {
         right: 7px;
-        }
+    }
   }
 
 
